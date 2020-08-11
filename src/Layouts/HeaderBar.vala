@@ -456,8 +456,8 @@ public class Akira.Layouts.HeaderBar : Gtk.HeaderBar {
                 }
 
                 button.get_child ().destroy ();
-                var label = new Granite.AccelLabel.from_action_name (file_name, accels);
-                button.add (label);
+                //  var label = new Granite.AccelLabel.from_action_name (file_name, accels);
+                //  button.add (label);
                 button.action_name = accels;
             } else {
                 button.text = file_name;
@@ -546,19 +546,19 @@ public class Akira.Layouts.HeaderBar : Gtk.HeaderBar {
     private Gtk.ModelButton create_model_button (string text, string? icon, string? accels = null) {
         var button = new Gtk.ModelButton ();
         button.get_child ().destroy ();
-        var label = new Granite.AccelLabel.from_action_name (text, accels);
+        //  var label = new Granite.AccelLabel.from_action_name (text, accels);
 
         if (icon != null) {
             var image = new Gtk.Image.from_icon_name (icon, Gtk.IconSize.MENU);
             image.margin_end = 6;
-            label.attach_next_to (
-                image,
-                label.get_child_at (0, 0),
-                Gtk.PositionType.LEFT
-            );
+            //  label.attach_next_to (
+            //      image,
+            //      label.get_child_at (0, 0),
+            //      Gtk.PositionType.LEFT
+            //  );
         }
 
-        button.add (label);
+        //  button.add (label);
         button.action_name = accels;
 
         return button;

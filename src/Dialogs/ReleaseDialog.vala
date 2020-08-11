@@ -87,7 +87,7 @@ public class Akira.Dialogs.ReleaseDialog : Gtk.Dialog {
         release_info.wrap_mode = Gtk.WrapMode.WORD;
         release_info.cursor_visible = false;
         release_info.editable = false;
-        release_info.get_style_context ().add_class (Granite.STYLE_CLASS_TERMINAL);
+        //  release_info.get_style_context ().add_class (Granite.STYLE_CLASS_TERMINAL);
 
         scrolled.add (release_info);
 

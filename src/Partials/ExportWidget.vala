@@ -52,8 +52,8 @@ public class Akira.Partials.ExportWidget : Gtk.Grid {
         // Image preview container with checker.
         image_container = new Gtk.Grid ();
         image_container.halign = Gtk.Align.CENTER;
-        image_container.get_style_context ().add_class (Granite.STYLE_CLASS_CHECKERBOARD);
-        image_container.get_style_context ().add_class (Granite.STYLE_CLASS_CARD);
+        //  image_container.get_style_context ().add_class (Granite.STYLE_CLASS_CHECKERBOARD);
+        //  image_container.get_style_context ().add_class (Granite.STYLE_CLASS_CARD);
 
         image = new Gtk.Image ();
         image_container.add (image);

@@ -42,7 +42,7 @@ public class Akira.Dialogs.ShortcutsDialog : Gtk.Dialog {
         column_start.hexpand = true;
         column_start.column_homogeneous = true;
 
-        column_start.attach (new Granite.HeaderLabel (_("General")), 0, 0, 2);
+        //  column_start.attach (new Granite.HeaderLabel (_("General")), 0, 0, 2);
         column_start.attach (new NameLabel (_("New window:")), 0, 1);
         column_start.attach (new ShortcutLabel ({"Ctrl", "N"}), 1, 1);
         column_start.attach (new NameLabel (_("Preferences:")), 0, 2);
@@ -52,7 +52,7 @@ public class Akira.Dialogs.ShortcutsDialog : Gtk.Dialog {
         column_start.attach (new NameLabel (_("Presentation mode:")), 0, 4);
         column_start.attach (new ShortcutLabel ({"Ctrl", "."}), 1, 4);
 
-        column_start.attach (new Granite.HeaderLabel (_("File")), 0, 5, 2);
+        //  column_start.attach (new Granite.HeaderLabel (_("File")), 0, 5, 2);
         column_start.attach (new NameLabel (_("Open:")), 0, 6);
         column_start.attach (new ShortcutLabel ({"Ctrl", "O"}), 1, 6);
         column_start.attach (new NameLabel (_("Save:")), 0, 7);
@@ -60,7 +60,7 @@ public class Akira.Dialogs.ShortcutsDialog : Gtk.Dialog {
         column_start.attach (new NameLabel (_("Save as:")), 0, 8);
         column_start.attach (new ShortcutLabel ({"Ctrl", "Shift", "S"}), 1, 8);
 
-        column_start.attach (new Granite.HeaderLabel (_("Export")), 0, 9, 2);
+        //  column_start.attach (new Granite.HeaderLabel (_("Export")), 0, 9, 2);
         column_start.attach (new NameLabel (_("Export artboards:")), 0, 10);
         column_start.attach (new ShortcutLabel ({"Ctrl", "Alt", "A"}), 1, 10);
         column_start.attach (new NameLabel (_("Export selection:")), 0, 11);
@@ -74,7 +74,7 @@ public class Akira.Dialogs.ShortcutsDialog : Gtk.Dialog {
         column_end.hexpand = true;
         column_end.column_homogeneous = true;
 
-        column_end.attach (new Granite.HeaderLabel (_("Canvas")), 0, 0, 2);
+        //  column_end.attach (new Granite.HeaderLabel (_("Canvas")), 0, 0, 2);
         column_end.attach (new NameLabel (_("Zoom in:")), 0, 1);
         column_end.attach (new ShortcutLabel ({"Ctrl", "+"}), 1, 1);
         column_end.attach (new NameLabel (_("Zoom out:")), 0, 2);
@@ -82,7 +82,7 @@ public class Akira.Dialogs.ShortcutsDialog : Gtk.Dialog {
         column_end.attach (new NameLabel (_("Zoom reset:")), 0, 3);
         column_end.attach (new ShortcutLabel ({"Ctrl", "0"}), 1, 3);
 
-        column_end.attach (new Granite.HeaderLabel (_("Item creation")), 0, 4, 2);
+        //  column_end.attach (new Granite.HeaderLabel (_("Item creation")), 0, 4, 2);
         column_end.attach (new NameLabel (_("Artboard:")), 0, 5);
         column_end.attach (new ShortcutLabel ({"A"}), 1, 5);
         column_end.attach (new NameLabel (_("Rectangle:")), 0, 6);
@@ -94,7 +94,7 @@ public class Akira.Dialogs.ShortcutsDialog : Gtk.Dialog {
         column_end.attach (new NameLabel (_("Image:")), 0, 9);
         column_end.attach (new ShortcutLabel ({"I"}), 1, 9);
 
-        column_end.attach (new Granite.HeaderLabel (_("Transform")), 0, 10, 2);
+        //  column_end.attach (new Granite.HeaderLabel (_("Transform")), 0, 10, 2);
         column_end.attach (new NameLabel (_("Raise selection:")), 0, 11);
         column_end.attach (new ShortcutLabel ({"Ctrl", "↑"}), 1, 11);
         column_end.attach (new NameLabel (_("Lower selection:")), 0, 12);

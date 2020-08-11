@@ -41,7 +41,7 @@ public class Akira.Dialogs.ExportDialog : Gtk.Dialog {
     public Gtk.Switch alpha_switch;
 
     private Gtk.Overlay main_overlay;
-    private Granite.Widgets.OverlayBar overlaybar;
+    //  private Granite.Widgets.OverlayBar overlaybar;
 
     public ExportDialog (
         Akira.Window window,
@@ -97,8 +97,8 @@ public class Akira.Dialogs.ExportDialog : Gtk.Dialog {
         build_export_sidebar ();
 
         main_overlay = new Gtk.Overlay ();
-        overlaybar = new Granite.Widgets.OverlayBar (main_overlay);
-        overlaybar.active = true;
+        //  overlaybar = new Granite.Widgets.OverlayBar (main_overlay);
+        //  overlaybar.active = true;
 
         var main = new Gtk.Grid ();
         main.expand = true;
@@ -219,18 +219,18 @@ public class Akira.Dialogs.ExportDialog : Gtk.Dialog {
         var size_title = section_title (_("Scale:"));
         grid.attach (size_title, 0, 6, 1, 1);
 
-        var scale_button = new Granite.Widgets.ModeButton ();
-        scale_button.halign = Gtk.Align.FILL;
-        scale_button.append_text ("0.5×");
-        scale_button.append_text ("1×");
-        scale_button.append_text ("2×");
-        scale_button.append_text ("4×");
-        scale_button.set_active (settings.export_scale);
-        settings.bind ("export-scale", scale_button, "selected", SettingsBindFlags.DEFAULT);
-        grid.attach (scale_button, 1, 6, 1, 1);
-        settings.changed["export-scale"].connect (() => {
-            manager.regenerate_pixbuf (export_type);
-        });
+        //  var scale_button = new Granite.Widgets.ModeButton ();
+        //  scale_button.halign = Gtk.Align.FILL;
+        //  scale_button.append_text ("0.5×");
+        //  scale_button.append_text ("1×");
+        //  scale_button.append_text ("2×");
+        //  scale_button.append_text ("4×");
+        //  scale_button.set_active (settings.export_scale);
+        //  settings.bind ("export-scale", scale_button, "selected", SettingsBindFlags.DEFAULT);
+        //  grid.attach (scale_button, 1, 6, 1, 1);
+        //  settings.changed["export-scale"].connect (() => {
+        //      manager.regenerate_pixbuf (export_type);
+        //  });
 
         // Buttons.
         var action_area = new Gtk.Grid ();
@@ -294,17 +294,17 @@ public class Akira.Dialogs.ExportDialog : Gtk.Dialog {
     }
 
     private async void on_export_preview (string message) {
-        overlaybar.label = message;
-        overlaybar.visible = true;
-        sidebar.@foreach ((child) => {
-            child.sensitive = false;
-        });
+        //  overlaybar.label = message;
+        //  overlaybar.visible = true;
+        //  sidebar.@foreach ((child) => {
+        //      child.sensitive = false;
+        //  });
     }
 
     private async void on_preview_completed () {
         sidebar.@foreach ((child) => {
             child.sensitive = true;
         });
-        overlaybar.visible = false;
+        //  overlaybar.visible = false;
     }
 }

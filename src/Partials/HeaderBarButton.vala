@@ -37,7 +37,7 @@ public class Akira.Partials.HeaderBarButton : Gtk.Grid {
         button.can_focus = false;
         button.halign = Gtk.Align.CENTER;
         button.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
-        button.tooltip_markup = Granite.markup_accel_tooltip (accels, name);
+        //  button.tooltip_markup = Granite.markup_accel_tooltip (accels, name);
 
         image = new ButtonImage (icon_name);
         button.add (image);

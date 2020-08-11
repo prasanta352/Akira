@@ -46,20 +46,20 @@ public class Akira.Partials.ZoomButton : Gtk.Grid {
         zoom_out_button.get_style_context ().add_class ("raised");
         zoom_out_button.get_style_context ().add_class ("button-zoom");
         zoom_out_button.can_focus = false;
-        zoom_out_button.tooltip_markup = Granite.markup_accel_tooltip ({"<Ctrl>minus"}, _("Zoom Out"));
+        //  zoom_out_button.tooltip_markup = Granite.markup_accel_tooltip ({"<Ctrl>minus"}, _("Zoom Out"));
 
         zoom_default_button = new Gtk.Button.with_label ("100%");
         zoom_default_button.hexpand = true;
         zoom_default_button.clicked.connect (zoom_reset);
         zoom_default_button.can_focus = false;
-        zoom_default_button.tooltip_markup = Granite.markup_accel_tooltip ({"<Ctrl>0"}, _("Reset Zoom"));
+        //  zoom_default_button.tooltip_markup = Granite.markup_accel_tooltip ({"<Ctrl>0"}, _("Reset Zoom"));
 
         zoom_in_button = new Gtk.Button.from_icon_name ("zoom-in-symbolic", Gtk.IconSize.MENU);
         zoom_in_button.clicked.connect (zoom_in);
         zoom_in_button.get_style_context ().add_class ("raised");
         zoom_in_button.get_style_context ().add_class ("button-zoom");
         zoom_in_button.can_focus = false;
-        zoom_in_button.tooltip_markup = Granite.markup_accel_tooltip ({"<Ctrl>plus"}, _("Zoom In"));
+        //  zoom_in_button.tooltip_markup = Granite.markup_accel_tooltip ({"<Ctrl>plus"}, _("Zoom In"));
 
         attach (zoom_out_button, 0, 0, 1, 1);
         attach (zoom_default_button, 1, 0, 1, 1);

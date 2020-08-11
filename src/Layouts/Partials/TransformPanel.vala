@@ -122,8 +122,8 @@ public class Akira.Layouts.Partials.TransformPanel : Gtk.Grid {
         hflip_button.sensitive = false;
         hflip_button.halign = Gtk.Align.CENTER;
         hflip_button.valign = Gtk.Align.CENTER;
-        hflip_button.tooltip_markup =
-            Granite.markup_accel_tooltip ({"<Ctrl>bracketleft"}, _("Flip Horizontally"));
+        //  hflip_button.tooltip_markup =
+        //      Granite.markup_accel_tooltip ({"<Ctrl>bracketleft"}, _("Flip Horizontally"));
 
         vflip_button = new Gtk.ToggleButton ();
         vflip_button.add (new Akira.Partials.ButtonImage ("object-flip-vertical"));
@@ -133,8 +133,8 @@ public class Akira.Layouts.Partials.TransformPanel : Gtk.Grid {
         vflip_button.sensitive = false;
         vflip_button.halign = Gtk.Align.CENTER;
         vflip_button.valign = Gtk.Align.CENTER;
-        vflip_button.tooltip_markup =
-            Granite.markup_accel_tooltip ({"<Ctrl>bracketright"}, _("Flip Vertically"));
+        //  vflip_button.tooltip_markup =
+        //      Granite.markup_accel_tooltip ({"<Ctrl>bracketright"}, _("Flip Vertically"));
 
         var align_grid = new Gtk.Grid ();
         align_grid.hexpand = true;
